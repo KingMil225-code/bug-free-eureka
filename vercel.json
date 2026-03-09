@@ -1,0 +1,13 @@
+{
+  "github": {
+    "silent": true
+  },
+  "functions": {
+    "api/**/*.ts": {
+      "runtime": "@vercel/node@latest"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" }
+  ]
+}
